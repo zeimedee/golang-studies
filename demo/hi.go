@@ -10,5 +10,10 @@ func main() {
 	var str string
 	fmt.Println("\nEnter something")
 	fmt.Scanln(&str)
-	fmt.Printf("something: %s", str)
+	fmt.Printf("something: %s\n", str)
+
+	var str1 string
+	fmt.Println("Enter something else:")
+	fmt.Scanf("%s", &str1)
+	fmt.Printf("something else: %s", str1)
 }
