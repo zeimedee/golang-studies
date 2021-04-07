@@ -1,7 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
-	fmt.Println("goooooo!\a")
+	var num float64
+	fmt.Printf("enter a float type number\n")
+	fmt.Scanf("%f", &num)
+	res := math.Trunc(num)
+	fmt.Println(res)
 }
