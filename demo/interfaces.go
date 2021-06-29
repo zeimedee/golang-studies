@@ -5,6 +5,8 @@ import (
 	"math"
 )
 
+//interfaces in go are a collection of method definitions
+
 type rect struct {
 	width, height float64
 }
