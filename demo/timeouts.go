@@ -22,7 +22,7 @@ func main() {
 	c2 := make(chan string, 1)
 	go func() {
 		time.Sleep(2 * time.Second)
-		c1 <- "result 2"
+		c2 <- "result 2"
 	}()
 	select {
 	case res := <-c2:
