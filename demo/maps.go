@@ -14,5 +14,5 @@ func main() {
 
 	n := map[string]int{"a": 2, "b": 3, "c": 4}
 
-	fmt.Println("n:", n)
+	fmt.Println("n:a", n["a"])
 }
