@@ -15,7 +15,7 @@ type Response struct {
 }
 
 type Pokemon struct {
-	Entry_No string         `json:"entry_number"`
+	Entry_No int            `json:"entry_number"`
 	Species  PokemonSpecies `json:"pokemon_species"`
 }
 
@@ -42,6 +42,6 @@ func main() {
 	fmt.Println("\n")
 
 	for _, pokemon := range responseObject.Pokemon {
-		fmt.Println(pokemon.Species.Name)
+		fmt.Println(pokemon.Entry_No, ":", pokemon.Species.Name)
 	}
 }
