@@ -1,8 +1,10 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"os"
+	"reflect"
 )
 
 func main() {
@@ -10,5 +12,6 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	os.Stdout.Write(file)
+	// os.Stdout.Write(file)
+	fmt.Println(reflect.TypeOf(file))
 }

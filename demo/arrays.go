@@ -16,7 +16,7 @@ func main() {
 		fmt.Println("\nEnter an number")
 		// input number
 		fmt.Scanln(&num_string)
-		// conver to integer
+		// convert to integer
 		num, err := strconv.Atoi(num_string)
 		// assign num to array index
 		array[i] = num
